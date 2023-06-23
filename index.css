@@ -1,0 +1,98 @@
+body {
+  background-image: url("sky.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 8% 26% 9% 26%;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px 30px;
+  border-width: 20px;
+  border: 3px solid rgba(135, 206, 250, 0.2);
+  border-radius: 225px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background-color: rgba(135, 206, 250, 0.4);
+}
+div,
+form {
+  max-width: 100%;
+}
+input {
+  border: 2px solid lightskyblue;
+  border-radius: 20px;
+  background-color: white;
+}
+.srh {
+  padding: 0 50px;
+  padding-left: 5px;
+}
+ul {
+  list-style: none;
+}
+.day,
+.day ul {
+  padding: 0;
+}
+.days {
+  margin: 0 8px auto;
+  padding: 0;
+}
+.day {
+  max-width: 100%;
+  display: flex;
+  margin: 0 12% auto;
+}
+.Kabul {
+  margin-left: 8%;
+}
+p {
+  line-height: 0.5;
+}
+.para {
+  margin-left: 40px;
+  font-size: 20px;
+  border-style: none;
+  background-color: transparent;
+}
+.ber {
+  margin-left: 10px;
+}
+
+.col-4,
+.col-5 {
+  text-align: left;
+}
+.info {
+  margin-left: 14.5%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+  color: gray;
+}
+.mycity {
+  margin-left: 5%;
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+hr {
+  opacity: 0.1;
+}
+.date {
+  color: gray;
+}
+small {
+  font-weight: bold;
+  color: gray;
+}
+span {
+  font-weight: 400;
+}
+.week {
+  font-size: 20px;
+  font-weight: 500;
+}
