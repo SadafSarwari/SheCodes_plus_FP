@@ -1,5 +1,3 @@
-// Feature #1 - Display time & date
-
 function whatDayIsIt() {
   let now = new Date();
 
@@ -19,21 +17,18 @@ function whatDayIsIt() {
   let hours = now.getHours();
   let minutes = now.getMinutes();
 
-  // if the minutes are lower than 10, we still want them to have two digits
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
-  // if the date is the first, second or third, the appendix "th" is different
-
-  let elaborateNow = `${day}, ${hours}:${minutes}`; // Wednesday 24th March, 10.30
+  let elaborateNow = `${day}, ${hours}:${minutes}`;
 
   let currentDate = document.querySelector("#current__date");
   currentDate.innerHTML = elaborateNow;
 }
 whatDayIsIt();
 setInterval(whatDayIsIt, 60000);
-// change the city and temprature according the searchbox
+
 let currentCity = document.querySelector(".current__title");
 let searchForm = document.querySelector(".searcher");
 
@@ -59,7 +54,7 @@ function updateCity(event) {
 
   currentCity.innerHTML = city;
 }
-//temprature of current city
+
 function showWeather(response) {
   let h1 = document.querySelector(".current__title");
   let temperature = Math.round(response.data.main.temp);
