@@ -103,6 +103,6 @@ span {
 #celsius-link,
 #fahrenheit-link {
   color: white;
-  list-style-type: none;
-  text-decoration-style: none;
+  cursor: default;
+  text-decoration: none;
 }
