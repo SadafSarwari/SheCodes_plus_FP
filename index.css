@@ -104,4 +104,5 @@ span {
 #fahrenheit-link {
   color: white;
   list-style-type: none;
+  text-decoration-style: none;
 }
