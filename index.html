@@ -14,11 +14,11 @@
   </head>
   <body>
     <div class="container">
-      <form class="searcher">
+      <form id="search-form">
         <input
           type="text"
           placeholder="New York"
-          id="city"
+          id="city-input"
           autofocus="off"
           autocomplete="off"
         />
@@ -34,19 +34,24 @@
       <hr />
       <div class="row">
         <div class="col-4 Kabul">
-          <h1><strong class="current__title">Kabul </strong><span>🌤</span></h1>
+          <h1>
+            <strong id="city">Kabul </strong
+            ><span
+              ><img src="" alt="Clear" id="icon" class="float-left"
+            /></span>
+          </h1>
           <h3>
-            <span id="Cdegree">17</span> <span>° C</span> |<span>63</span>
+            <span id="temperature">17</span> <span>° C</span> |<span>63</span>
             <span>° F</span>
           </h3>
-          <p id="current__date" class="date">Sunday 9 :11 PM</p>
+          <p id="date" class="date">Sunday 9 :11 PM</p>
         </div>
         <div class="col-5 pt-1 info">
           <ul>
-            <li>Clear with periodic clouds</li>
-            <li>Precipitation: 1%</li>
-            <li>Humidity: 42%</li>
-            <li>Wind: 10 km/h</li>
+            <li id="description">Clear with periodic clouds</li>
+
+            <li>Humidity: <span id="humidity"></span> %</li>
+            <li>Wind: <span id="wind"></span> km/h</li>
           </ul>
         </div>
         <div class="row day">
