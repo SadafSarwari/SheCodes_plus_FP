@@ -88,3 +88,24 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Kabul");
+//temprature of current city
+function showWeather(response) {
+  let h1 = document.querySelector(".current__title");
+  let temperature = Math.round(response.data.main.temp);
+  h1.innerHTML = `${response.data.name}`;
+  let tmp = document.querySelector("#temperature");
+  tmp.innerHTML = `${temperature}`;
+}
+
+function retrievePosition(position) {
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(url).then(showWeather);
+}
+function getCity() {
+  navigator.geolocation.getCurrentPosition(retrievePosition);
+}
+let btn = document.querySelector("#current");
+btn.addEventListener("click", getCity);
