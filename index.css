@@ -100,3 +100,8 @@ span {
   text-decoration: none;
   color: white;
 }
+#celsius-link,
+#fahrenheit-link {
+  color: white;
+  list-style-type: none;
+}
